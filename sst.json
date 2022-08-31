@@ -1,0 +1,5 @@
+{
+  "name": "premises",
+  "region": "us-west-1",
+  "main": "stacks/index.js"
+}
