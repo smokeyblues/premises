@@ -12,6 +12,7 @@ export function ApiStack({ stack, app }) {
         permissions: [table],
         environment: {
           TABLE_NAME: table.tableName,
+          STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
         },
       },
     },
@@ -21,6 +22,7 @@ export function ApiStack({ stack, app }) {
       "GET /premises": "functions/list.main",
       "PUT /premises/{id}": "functions/update.main",
       "DELETE /premises/{id}": "functions/delete.main",
+      "POST /billing": "functions/billing.main",
     },
   });
 
