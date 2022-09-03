@@ -38,7 +38,7 @@ export default function Home() {
     function renderPremisesList(premises) {
         return (
             <>
-              <LinkContainer to="/notes/new">
+              <LinkContainer to="/premises/new">
                 <ListGroup.Item action className="py-3 text-nowrap text-truncate">
                   <BsPencilSquare size={17} />
                   <span className="ml-2 font-weight-bold">Create a new premise</span>
